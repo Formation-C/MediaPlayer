@@ -5,28 +5,31 @@
 
 using namespace std;
 
-//void displayTrackName(string trackName) {
-//    cout << trackName << endl;
-//}
-
 
 int main()
 {
     Player* player = new Player();
-    for_each(
-        player->GettracksList()->begin(),
-        player->GettracksList()->end(),
-//        displayTrackName
-        [](string trackName) {
-            cout << trackName << endl;
-        }
-    );
+//    for_each(
+//        player->GettracksList()->begin(),
+//        player->GettracksList()->end(),
+//        [](string trackName) {
+//            cout << trackName << endl;
+//        }
+//    );
 
     string input;
     while (input != "exit") {
         cout << "Input command: ";
         cin >> input;
-        cout << input << endl;
+
+        if (input == "play") {
+            player->Getstate()->onPlay();
+        } else if (input == "stop") {
+            player->Getstate()->onStop();
+        } else if (input == "exit") {
+        } else {
+            cout << "Unknown command" << endl;
+        }
     }
     return 0;
 }

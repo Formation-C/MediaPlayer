@@ -1,13 +1,44 @@
 # depslib dependency file v1.0
-1575019243 source:c:\dev\mediaplayer\main.cpp
+1575025827 source:c:\dev\mediaplayer\main.cpp
 	<iostream>
 	<algorithm>
 	"Player.h"
 
-1575019693 c:\dev\mediaplayer\include\player.h
+1575024555 c:\dev\mediaplayer\include\player.h
 	<iostream>
 	<vector>
+	"State.h"
+	"StoppedState.h"
 
-1575019682 source:c:\dev\mediaplayer\src\player.cpp
+1575024045 source:c:\dev\mediaplayer\src\player.cpp
 	"Player.h"
+
+1575024580 c:\dev\mediaplayer\include\state.h
+	"Player.h"
+
+1575020494 source:c:\dev\mediaplayer\src\state.cpp
+	"State.h"
+
+1575024507 c:\dev\mediaplayer\include\stoppedstate.h
+	<State.h>
+
+1575026872 source:c:\dev\mediaplayer\src\stoppedstate.cpp
+	"StoppedState.h"
+	"PlayingState.h"
+
+1575027079 source:c:\dev\mediaplayer\src\playingstate.cpp
+	"PlayingState.h"
+	"PausedState.h"
+	"StoppedState.h"
+
+1575025896 c:\dev\mediaplayer\include\playingstate.h
+	<State.h>
+
+1575027080 source:c:\dev\mediaplayer\src\pausedstate.cpp
+	"PausedState.h"
+	"PlayingState.h"
+	"StoppedState.h"
+
+1575026872 c:\dev\mediaplayer\include\pausedstate.h
+	<State.h>
 
